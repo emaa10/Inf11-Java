@@ -4,15 +4,15 @@ public class GraphMatrix
     public Knoten[] knoten;
     public int[][] matrix;
 
-    public GraphMatrix(int anzahlKnotenN)
+    public GraphMatrix(int maxAnzahlKnoten)
     {
-        anzahlKnoten = anzahlKnotenN;
-        knoten = new Knoten[anzahlKnotenN];
-        matrix = new int[anzahlKnoten][anzahlKnoten];
+        anzahlKnoten = 0;
+        knoten = new Knoten[maxAnzahlKnoten];
+        matrix = new int[maxAnzahlKnoten][maxAnzahlKnoten];
 
-        for(int x = 0; x < anzahlKnoten; x++) {
-            for(int y = 0; y < anzahlKnoten; y++) {
-                matrix[x][y] = Integer.MIN_VALUE;
+        for(int i = 0; i < maxAnzahlKnoten; i++) {
+            for(int j = 0; j < maxAnzahlKnoten; j++) {
+                matrix[i][j] = Integer.MIN_VALUE;
             }
         }
     }
