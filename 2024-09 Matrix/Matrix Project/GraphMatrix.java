@@ -7,8 +7,8 @@ public class GraphMatrix
     public GraphMatrix(int maxAnzahlKnoten)
     {
         anzahlKnoten = 0;
-        knoten = new Knoten[maxAnzahlKnoten];
-        matrix = new int[maxAnzahlKnoten][maxAnzahlKnoten];
+        knoten = new Knoten[maxAnzahlKnoten]; // steht NULL drin
+        matrix = new int[maxAnzahlKnoten][maxAnzahlKnoten]; // steht 0 drin
 
         for(int i = 0; i < maxAnzahlKnoten; i++) {
             for(int j = 0; j < maxAnzahlKnoten; j++) {
