@@ -9,6 +9,12 @@ public class GraphMatrix
         anzahlKnoten = anzahlKnotenN;
         knoten = new Knoten[anzahlKnotenN];
         matrix = new int[anzahlKnoten][anzahlKnoten];
+
+        for(int x = 0; i < anzahlKnoten; i++) {
+            for(int y = 0; i < anzahlKnoten; i++) {
+                matrix[x][y] = Integer.MIN_VALUE;
+            }
+        }
     }
 
     public void knotenEinfuegen(String name) {
