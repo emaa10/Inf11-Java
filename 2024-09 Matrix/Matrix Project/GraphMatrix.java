@@ -10,8 +10,8 @@ public class GraphMatrix
         knoten = new Knoten[anzahlKnotenN];
         matrix = new int[anzahlKnoten][anzahlKnoten];
 
-        for(int x = 0; i < anzahlKnoten; i++) {
-            for(int y = 0; i < anzahlKnoten; i++) {
+        for(int x = 0; x < anzahlKnoten; x++) {
+            for(int y = 0; y < anzahlKnoten; y++) {
                 matrix[x][y] = Integer.MIN_VALUE;
             }
         }
