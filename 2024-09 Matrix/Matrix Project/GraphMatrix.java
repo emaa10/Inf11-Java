@@ -18,7 +18,10 @@ public class GraphMatrix
     }
 
     public void knotenEinfuegen(String name) {
-        //
+        if(anzahlKnoten < knoten.length && knotenNummer(name) == -1) { // wenn anzahlKnoten kleiner als knoten länge und kein Element den Bezeichner schon hat
+            knoten[anzahlKnoten] = new Knoten(name);
+            anzahlKnoten += 1;
+        }
     }
 
     public void kanteEinfuegen(String ersterKnoten, String zweiterKnoten, int gewicht) {
