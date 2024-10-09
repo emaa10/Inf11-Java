@@ -25,12 +25,12 @@ public class GraphMatrix
         //
     }
 
-    public int knotenNummer(String knotenName) {
+    public int knotenNummer(String query) {
         for(int i = 0; i<anzahlKnoten; i++) {
-            if(knoten[i].bezeichnerGeben() == knotenName) {
+            if(knoten[i].bezeichnerGeben() == query) {
                 return i;
             }
-        }
+        } 
         return -1;
     }
 
