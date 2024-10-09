@@ -25,8 +25,13 @@ public class GraphMatrix
         //
     }
 
-    public int knotenNummer(String knoten) {
-        return 0;
+    public int knotenNummer(String knotenName) {
+        for(int i = 0; i<anzahlKnoten; i++) {
+            if(knoten[i].bezeichnerGeben() == knotenName) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     public void ausgeben() {
