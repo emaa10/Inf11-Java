@@ -25,7 +25,12 @@ public class GraphMatrix
     }
 
     public void kanteEinfuegen(String ersterKnoten, String zweiterKnoten, int gewicht) {
-        //
+        int von = knotenNummer(ersterKnoten)
+        int nach = knotenNummer(zweiterKnoten)
+        if(von != -1 && nach != -1) {
+            matrix[von][nach] = gewicht;
+        }
+
     }
 
     public int knotenNummer(String query) {
