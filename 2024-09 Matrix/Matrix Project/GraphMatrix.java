@@ -30,7 +30,7 @@ public class GraphMatrix
 
     public int knotenNummer(String query) {
         for(int i = 0; i<anzahlKnoten; i++) {
-            if(knoten[i].bezeichnerGeben() == query) {
+            if(knoten[i].bezeichnerGeben().equals(query)) {
                 return i;
             }
         } 
