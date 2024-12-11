@@ -52,7 +52,7 @@ public class GraphMatrix
     }
 
     public void tiefensuche(String startKnoten) {
-        int startNummer = knotenNummer(startKnoten)
+        int startNummer = knotenNummer(startKnoten);
 
         if(startNummer != -1) { // wenn der knoten existiert
             //alle knoten als nicht besucht initialisieren
