@@ -1,12 +1,12 @@
 #BlueJ class context
 comment0.target=GraphMatrix
-comment1.params=maxAnzahlKnoten
+comment1.params=anzahlKnotenN
 comment1.target=GraphMatrix(int)
 comment2.params=name
 comment2.target=void\ knotenEinfuegen(java.lang.String)
 comment3.params=ersterKnoten\ zweiterKnoten\ gewicht
 comment3.target=void\ kanteEinfuegen(java.lang.String,\ java.lang.String,\ int)
-comment4.params=knotenName
+comment4.params=knoten
 comment4.target=int\ knotenNummer(java.lang.String)
 comment5.params=
 comment5.target=void\ ausgeben()
